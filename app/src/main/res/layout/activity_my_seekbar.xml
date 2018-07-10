@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/ips_bg"
+    tools:context="com.example.kobe.ProgressBar.MySeekbarActivity">
+    <com.example.kobe.ProgressBar.MySeekbar
+        android:id="@+id/mySeekbar"
+        android:layout_width="260dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="20dp"
+        android:maxHeight="8dp"
+        android:minHeight="8dp"
+        android:thumb="@mipmap/book_rabbit"
+        android:progress="0"
+        android:splitTrack="false"
+        android:progressDrawable="@drawable/bookroom_seekbar_bg"/>
+
+</RelativeLayout>

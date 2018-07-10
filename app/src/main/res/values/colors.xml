@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 主题颜色 -->
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="gray1">#828282</color>
+    <color name="gray2">#5D5D5D</color>
+    <!-- 学习周报列表主背景色 -->
+    <color name="bg_fragment_learning_weekly">#f9f9f9</color>
+    <!-- 学习周报列表item背景色 -->
+    <color name="bg_fragment_learning_weekly_item">#ffffff</color>
+    <!-- 学习周报列表item大字色 -->
+    <color name="bg_fragment_learning_weekly_item_text_a">#666</color>
+    <!-- 学习周报列表item小字色 -->
+    <color name="bg_fragment_learning_weekly_item_text_b">#999</color>
+    <!-- 学习周报列表item下划线色 -->
+    <color name="bg_fragment_learning_weekly_item_line_a">#61c1ec</color>
+    <!-- 学习周报列表item下划线色 -->
+    <color name="bg_fragment_learning_weekly_item_line_b">#eed41f</color>
+    <!-- 学习周报列表item下划线色 -->
+    <color name="bg_fragment_learning_weekly_item_line_c">#4cc07d</color>
+    <!-- 学习周报列表item下划线色 -->
+    <color name="bg_fragment_learning_weekly_item_line_d">#ff822e</color>
+    <!-- 学习周报列表item下划线色 -->
+    <color name="bg_fragment_learning_weekly_item_line_e">#b988f5</color>
+    <!-- 学习周报列表出勤session1 -->
+    <color name="bg_fragment_learning_weekly_attendance_session1">#f4e033</color>
+    <!-- 学习周报列表出勤session2 -->
+    <color name="bg_fragment_learning_weekly_attendance_session2">#96cd6d</color>
+    <!-- 学习周报列表出勤session3 -->
+    <color name="bg_fragment_learning_weekly_attendance_session3">#c373d5</color>
+    <!-- 学习周报列表出勤session4 -->
+    <color name="bg_fragment_learning_weekly_attendance_session4">#6dc7eb</color>
+    <!-- 界面背景色 -->
+    <color name="background">#efeff4</color>
+    <!-- 灰色 -->
+    <color name="white">#FFFFFF</color>
+    <!-- 白色 -->
+    <color name="black">#FF000000</color>
+    <!-- 黑色 -->
+    <color name="red">#FF4637</color>
+    <color name="red2">#ff0000</color>
+    <!-- 红色 -->
+    <color name="transparent">#00000000</color>
+    <!-- 透明 -->
+    <color name="half_transparent">#88000000</color>
+    <color name="white_transparent">#eeffffff</color>
+    <color name="sss">#2fffffff</color>
+    <color name="ssss">#20000000</color>
+    <!-- 80% 透明 -->
+    <color name="progress_bkg">#99d3e58c</color>
+    <!-- 进度条背景#99d3e58c-->
+    <color name="progress_start">#99b4d435</color>
+    <!--<color name="bkg_color_common_view_top">#08aae8</color>-->
+    <color name="bkg_color_common_view_top">#61c1ec</color>
+    <color name="color_common_other">#ffffff</color>
+    <!--<color name="color_baby_news_item_hascomment">#00adef</color>-->
+    <color name="color_comment_reply">#333333</color>
+    <!-- login -->
+    <color name="color_blue_movie">#0EB9DA</color>
+    <!-- color_blue_movie -->
+    <!--<color name="color_blue">#45b3ea</color>-->
+    <color name="color_blue">#61c1ec</color>
+    <color name="color_blue_pressed">#307da4</color>
+    <color name="color_gray">#999999</color>
+    <!-- more -->
+    <color name="color_more_border">#c9c9c9</color>
+    <!-- list_item -->
+    <color name="color_list_item">#dadada</color>
+    <!-- NiftyDialogEffects -->
+    <color name="text_color">#FFFFFF</color>
+    <!-- track_record_item -->
+    <color name="blue_bg">#5ce3f6</color>
+    <color name="qian_blue_bg">#a2daf5</color>
+    <!--  -->
+    <color name="s1_color_gray">#ffffff</color>
+    <!--<color name="s1_color_gray_pressed">#09a9e7</color>-->
+    <color name="s1_color_gray_pressed">#61c1ec</color>
+    <color name="s1_color_green_pressed">#61c1ec</color>
+    <color name="s1_color_blue_pressed">#61c1ec</color>
+    <!-- book reading -->
+    <color name="color_transparent">#00000000</color>
+    <color name="color_selectedclass">#80ceed</color>
+    <color name="color_f8f8f8">#f8f8f8</color>
+    <color name="color_cccccc">#cccccc</color>
+    <color name="color_6dc7eb">#6dc7eb</color>
+    <color name="color_333333">#333333</color>
+    <color name="color_666666">#666666</color>
+    <color name="color_77000000">#662a5465</color>
+    <color name="color_30323e">#dbdbdb</color>
+    <color name="color_ececec">#ececec</color>
+    <color name="color_dbc466">#efd46e</color>
+    <color name="screen_background_transparent">#80000000</color>
+    <color name="color_84c5e7">#84c5e7</color>
+    <color name="color_f1e7fd">#f1e7fd</color>
+    <color name="color_b932ff">#b932ff</color>
+    <color name="color_176da6">#176da6</color>
+    <color name="color_f95c5d">#f95c5d</color>
+    <color name="color_ffeed41f">#ffeed41f</color>
+    <color name="color_eed41f">#eed41f</color>
+    <color name="color_ff822e">#ff822e</color>
+    <color name="color_4cc07d">#4cc07d</color>
+    <color name="color_ff6699">#ff6699</color>
+    <color name="color_61c1ec">#61c1ec</color>
+    <color name="color_ff7800">#ff7800</color>
+    <color name="color_fe4b87">#fe4b87</color>
+    <color name="color_fa3a7a">#fa3a7a</color>
+    <color name="color_99ffffff">#99ffffff</color>
+    <color name="color_4f5667">#4f5667</color>
+    <color name="color_4dffffff">#4dffffff</color>
+    <color name="color_dff3fb">#dff3fb</color>
+    <color name="color_ff5800dd">#FF5800DD</color>
+    <color name="color_339966">#339966</color>
+    <color name="color_4dc8ff">#4dc8ff</color>
+    <color name="color_b0b4c1">#b0b4c1</color>
+    <color name="color_87CEFF">#87CEFF</color>
+    <color name="color_ec477e">#ec477e</color>
+    <color name="color_393f4f">#393f4f</color>
+    <color name="color_e5bd00">#e5bd00</color>
+    <color name="color_1f9dd5">#1f9dd5</color>
+    <color name="color_66000000">#66000000</color>
+    <color name="color_000000">#000000</color>
+    <color name="color_fdfbf5">#fdfbf5</color>
+    <color name="color_807E8D">#807E8D</color>
+    <color name="color_CFCAD6">#CFCAD6</color>
+    <color name="color_0EB9DA">#0EB9DA</color>
+    <color name="color_6224ED">#6224ED</color>
+    <color name="color_00CCFF">#00CCFF</color>
+    <color name="color_8e84aa">#8e84aa</color>
+    <color name="color_222222">#222222</color>
+    <color name="color_FF333333">#FF333333</color>
+
+
+
+    <!--Crop View-->
+    <!--田字格线-->
+    <!--<color name="ucrop_color_default_crop_grid">#80ffffff</color>-->
+    <color name="ucrop_color_default_crop_grid">#00ffffff</color>
+
+    <!--田字格外围框-->
+    <!--<color name="ucrop_color_default_crop_frame">#ffffff</color>-->
+    <color name="ucrop_color_default_crop_frame">#00ffffff</color>
+
+    <!--田字格外围区域颜色-->
+    <!--<color name="ucrop_color_default_dimmed">#8c000000</color>-->
+    <color name="ucrop_color_default_dimmed">#00ffffff</color>
+
+    <!--站位图颜色-->
+    <!--剪切窗默认的logo颜色-->
+    <!--<color name="ucrop_color_default_logo">#4f212121</color>-->
+    <color name="ucrop_color_default_logo">#4fe2ca12</color>
+</resources>
