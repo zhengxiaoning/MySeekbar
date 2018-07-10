@@ -31,7 +31,7 @@ private int currentIndex; //spinner当前选中的位置
 
     private void initData() {
        for(int i=0;i<4;i++){
-           mList.add("已读"+i);
+           mList.add("未读"+i);
        }
     }
 
