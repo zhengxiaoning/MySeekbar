@@ -8,13 +8,16 @@
     tools:context="com.example.kobe.ProgressBar.MySeekbarActivity">
     <com.example.kobe.ProgressBar.MySeekbar
         android:id="@+id/mySeekbar"
-        android:layout_width="260dp"
+        android:layout_width="148dp"
         android:layout_height="37dp"
+        android:layout_marginLeft="169dp"
         android:layout_marginTop="20dp"
+        android:paddingStart="18dp"
+        android:paddingEnd="18dp"
         android:maxHeight="8dp"
         android:minHeight="8dp"
         android:thumb="@mipmap/book_rabbit"
-        android:progress="0"
+        android:progress="100"
         android:splitTrack="false"
         android:progressDrawable="@drawable/bookroom_seekbar_bg"/>
 

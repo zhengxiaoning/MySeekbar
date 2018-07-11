@@ -2,6 +2,8 @@ package com.example.kobe.ProgressBar;
 
 import android.content.Context;
 import android.content.Intent;
+import android.graphics.Canvas;
+import android.graphics.Paint;
 import android.graphics.Rect;
 import android.util.AttributeSet;
 import android.util.Log;
@@ -54,13 +56,14 @@ public class MySeekbar extends android.support.v7.widget.AppCompatSeekBar {
         float x = event.getX();
         float y = event.getY();
         //根据左边距和thumb偏移量来确定thumb位置
-        float left = rect.left + getPaddingLeft() - getThumbOffset();
+        float left = rect.left  - getThumbOffset()+getPaddingLeft();
         float right = left + rect.width();
         if (x >= left && x <= right
                 && y >= rect.top && y <= rect.bottom)
             return true;
         return false;
     }
+
 
 
     public void setThumbClick(ThumbClickListener thumbClick) {

@@ -14,13 +14,13 @@ import java.util.List;
 public class ClassificationSpinner extends PopupWindow {
     private Context context;
     private IFLItemOnClickListener itemOnClickListener;
-    private List<String> list;
+    private List<BookRoomState> list;
     private int currentIndex;
     private int color;
     private RecyclerView mRecyclerView;
     private LinearLayoutManager linearLayoutManager;
     private ClassificationSpinnerAdapter adapter;
-    public ClassificationSpinner(Context context,int currentIndex,List<String>list,int color){
+    public ClassificationSpinner(Context context,int currentIndex,List<BookRoomState>list,int color){
         super(context);
         this.context=context;
         this.currentIndex=currentIndex;
@@ -28,7 +28,7 @@ public class ClassificationSpinner extends PopupWindow {
         this.color=color;
         init();
     }
-    public void notifyDataSetChanged(Context context,int currentIndex,List<String> list) {
+    public void notifyDataSetChanged(Context context,int currentIndex,List<BookRoomState> list) {
         this.context = context;
         this.currentIndex = currentIndex;
         this.list = list;

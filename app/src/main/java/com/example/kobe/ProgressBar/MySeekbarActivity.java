@@ -13,14 +13,14 @@ public class MySeekbarActivity extends AppCompatActivity {
 private MySeekbar mySeekbar;
 private ClassificationSpinner classificationSpinner;
 private int currentIndex; //spinner当前选中的位置
- private List<String>mList=new ArrayList<>();
+ private List<BookRoomState>mList=new ArrayList<>();
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_my_seekbar);
         mySeekbar=findViewById(R.id.mySeekbar);
         initData();
-        mySeekbar.setProgress(0);
+        mySeekbar.setProgress(50);
         mySeekbar.setThumbClick(new MySeekbar.ThumbClickListener() {
             @Override
             public void onThumbClick() {
@@ -30,15 +30,29 @@ private int currentIndex; //spinner当前选中的位置
     }
 
     private void initData() {
-       for(int i=0;i<4;i++){
-           mList.add("未读"+i);
-       }
+        BookRoomState unRead=new BookRoomState();
+        unRead.setState("未读");
+        unRead.setIcon(R.mipmap.book_icon_unread);
+        mList.add(unRead);
+        BookRoomState unfinished=new BookRoomState();
+        unfinished.setState("未完成");
+        unfinished.setIcon(R.mipmap.book_icon_unfinish);
+        mList.add(unfinished);
+        BookRoomState doneNotWell=new BookRoomState();
+        doneNotWell.setState("完成未达标");
+        doneNotWell.setIcon(R.mipmap.book_icon_unstandard);
+        mList.add(doneNotWell);
+        BookRoomState doneWell=new BookRoomState();
+        doneWell.setState("达标");
+        doneWell.setIcon(R.mipmap.book_icon_standard);
+        mList.add(doneWell);
+
     }
 
     private void initView() {
         classificationSpinner=new ClassificationSpinner(this,currentIndex,mList, R.color.color_blue_movie);
-        classificationSpinner.setWidth(400);
-        classificationSpinner.showAsDropDown(mySeekbar,mySeekbar.getThumb().getBounds().left,0);
-        Log.d("hh", "initView: "+mySeekbar.getThumb().getBounds().left);
+        classificationSpinner.setWidth(mySeekbar.getWidth());
+        classificationSpinner.showAsDropDown(mySeekbar,-classificationSpinner.getWidth()+mySeekbar.getThumb().getBounds().left+mySeekbar.getPaddingLeft()-mySeekbar.getThumbOffset()+104,0);
+        Log.d("hh", "initView: "+mySeekbar.getThumb().getBounds().left+"   "+ mySeekbar.getPaddingLeft()+" "+mySeekbar.getThumbOffset());
     }
 }

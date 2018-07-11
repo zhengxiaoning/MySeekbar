@@ -19,7 +19,7 @@ import butterknife.ButterKnife;
 
 public class ClassificationSpinnerAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
     private Context context;
-    private List<String> list;
+    private List<BookRoomState> list;
     private int currentIndex;
     private IFLItemOnClickListener itemOnClickListener;
 
@@ -30,7 +30,7 @@ public class ClassificationSpinnerAdapter extends RecyclerView.Adapter<RecyclerV
      * currentIndex  当前选中item
      * list          列表显示文本内容
      */
-    public ClassificationSpinnerAdapter(Context context, int currentIndex, List<String> list, int color) {
+    public ClassificationSpinnerAdapter(Context context, int currentIndex, List<BookRoomState> list, int color) {
         this.context = context;
         this.currentIndex = currentIndex;
         this.list = list;
@@ -77,7 +77,9 @@ public class ClassificationSpinnerAdapter extends RecyclerView.Adapter<RecyclerV
         }
         //设置分类内容
         if (list != null && list.size() > 0 && position <= list.size() - 1) {
-            viewHolder.textView.setText(list.get(position));
+            viewHolder.textView.setText(list.get(position).getState());
+            viewHolder.imageView.setImageResource(list.get(position).getIcon());
+
         }
     }
 
@@ -89,8 +91,8 @@ public class ClassificationSpinnerAdapter extends RecyclerView.Adapter<RecyclerV
     static class ViewHolder extends RecyclerView.ViewHolder {
         @BindView(R.id.txtView)
         TextView textView;
-//        @BindView(R.id.imgView)
-//        ImageView imageView;
+        @BindView(R.id.imgView)
+        ImageView imageView;
         @BindView(R.id.line)
         View line;
 
