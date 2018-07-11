@@ -37,7 +37,7 @@ public class MySeekbar extends android.support.v7.widget.AppCompatSeekBar {
             case MotionEvent.ACTION_MOVE:
                 break;
             case MotionEvent.ACTION_UP:
-                if (isClickThumb(event,getThumb().getBounds())) {
+                if (isClickThumb(event, getThumb().getBounds())) {
                     thumbClick.onThumbClick();
                 }
                 break;
@@ -48,22 +48,22 @@ public class MySeekbar extends android.support.v7.widget.AppCompatSeekBar {
 
     /**
      * 设置点击事件只在thumb上有效
+     *
      * @param event 点击事件
-     * @param rect thumb
+     * @param rect  thumb
      */
 
-    private boolean isClickThumb(MotionEvent event,Rect rect) {
+    private boolean isClickThumb(MotionEvent event, Rect rect) {
         float x = event.getX();
         float y = event.getY();
         //根据左边距和thumb偏移量来确定thumb位置
-        float left = rect.left  - getThumbOffset()+getPaddingLeft();
+        float left = rect.left - getThumbOffset() + getPaddingLeft();
         float right = left + rect.width();
         if (x >= left && x <= right
                 && y >= rect.top && y <= rect.bottom)
             return true;
         return false;
     }
-
 
 
     public void setThumbClick(ThumbClickListener thumbClick) {

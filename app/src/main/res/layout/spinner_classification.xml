@@ -13,7 +13,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@drawable/top_stage_bg"
-            tools:listitem="@layout/item_spinner"
-            android:scrollbars="none"/>
+            android:scrollbars="none"
+            tools:listitem="@layout/item_spinner" />
     </RelativeLayout>
 </RelativeLayout>

@@ -6,10 +6,13 @@ package com.example.kobe.ProgressBar;
 public class BookRoomState {
     private String state;
     private int icon;
-    public BookRoomState(){}
-    public BookRoomState(String state,int icon){
-        this.state=state;
-        this.icon=icon;
+
+    public BookRoomState() {
+    }
+
+    public BookRoomState(String state, int icon) {
+        this.state = state;
+        this.icon = icon;
     }
 
     public void setIcon(int icon) {
